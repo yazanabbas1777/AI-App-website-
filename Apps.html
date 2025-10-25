@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>التطبيقات</title>
+    
+    <link rel="stylesheet" href="Style.css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>قائمة تطبيقات الذكاء الاصطناعي</h1>
+    </header>
+
+   <nav>
+    <ul>
+        <li><a href="home.html">الرئيسية</a></li>
+        <li><a href="AboutUs.html">من نحن</a></li>
+        <li><a href="apps.html">التطبيقات</a></li>
+        <li><a href="add_app.html">إضافة تطبيق</a></li>
+    </ul>
+</nav>
+...
+<tbody id="appsTableBody"> 
+    ...
+
+    <main>
+        <section class="applications-list">
+            <h2> معلومات التطبيقات</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>اسم التطبيق</th>
+                        <th>اسم الشركة المطورة</th>
+                        <th>مجال الاستخدام</th>
+                        <th>مجاني / غير مجاني</th>
+                        <th>اختيار</th>
+                        <th>التفاصيل</th> 
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-url="https://visionai.com" data-short-desc="أداة قوية لتحليل الصور واكتشاف الأنماط المعقدة." data-media="vision_ai_logo.png">Vision AI</td>
+                        <td>TechNova Solutions</td>
+                        <td>التعرف على الصور</td>
+                        <td><input type="checkbox" name="free_app_1" disabled> غير مجاني</td>
+                        <td><input type="radio" name="select_app" value="Vision AI"></td>
+                        <td><button class="details-btn" onclick="showDetails(this)">إظهار التفاصيل</button></td>
+                    </tr>
+                    <tr>
+                        <td data-url="https://edubot.net" data-short-desc="مساعد شخصي للطلاب يوفر شروحات واختبارات تفاعلية." data-media="edubot_video.mp4">EduBot</td>
+                        <td>LearnFast Academy</td>
+                        <td>التعليم (Education)</td>
+                        <td><input type="checkbox" name="free_app_2" checked disabled> مجاني</td>
+                        <td><input type="radio" name="select_app" value="EduBot"></td>
+                        <td><button class="details-btn" onclick="showDetails(this)">إظهار التفاصيل</button></td>
+                    </tr>
+                    <tr>
+                        <td data-url="https://mp.finance.co" data-short-desc="تحليل متقدم للأسواق المالية وتوقع حركات الأسهم بناءً على البيانات الضخمة." data-media="mp_audio.mp3">MarketPredictor</td>
+                        <td>Finance AI Co.</td>
+                        <td>التحليل المالي</td>
+                        <td><input type="checkbox" name="free_app_3" disabled> غير مجاني</td>
+                        <td><input type="radio" name="select_app" value="MarketPredictor"></td>
+                        <td><button class="details-btn" onclick="showDetails(this)">إظهار التفاصيل</button></td>
+                    </tr>
+                    <tr>
+                        <td data-url="https://healthmon.net" data-short-desc="تطبيق لتتبع المؤشرات الحيوية وتقديم نصائح صحية شخصية." data-media="health_monitor_logo.png">Health Monitor</td>
+                        <td>BioTech Systems</td>
+                        <td>الرعاية الصحية</td>
+                        <td><input type="checkbox" name="free_app_4" disabled> غير مجاني</td>
+                        <td><input type="radio" name="select_app" value="Health Monitor"></td>
+                        <td><button class="details-btn" onclick="showDetails(this)">إظهار التفاصيل</button></td>
+                    </tr>
+                    <tr>
+                        <td data-url="https://translate-pro.com" data-short-desc="ترجمة فورية للنصوص والأصوات لأكثر من 50 لغة حول العالم." data-media="tp_logo.png">Translate Pro</td>
+                        <td>Global Comm</td>
+                        <td>الترجمة الفورية</td>
+                        <td><input type="checkbox" name="free_app_5" checked disabled> مجاني</td>
+                        <td><input type="radio" name="select_app" value="Translate Pro"></td>
+                        <td><button class="details-btn" onclick="showDetails(this)">إظهار التفاصيل</button></td>
+                    </tr>
+                    <tr>
+                        <td data-url="https://roboclean.com" data-short-desc="منصة للتحكم في روبوتات التنظيف المنزلية الذكية وإدارة مهامها." data-media="rc_video.mp4">RoboClean</td>
+                        <td>Smart Homes</td>
+                        <td>الروبوتات (Robotics)</td>
+                        <td><input type="checkbox" name="free_app_6" disabled> غير مجاني</td>
+                        <td><input type="radio" name="select_app" value="RoboClean"></td>
+                        <td><button class="details-btn" onclick="showDetails(this)">إظهار التفاصيل</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <button id="continueBtn" onclick="return validateAndContinue()">متابعة</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025. التطبيقات الرقمية.</p>
+    </footer>
+    
+    <script src="myFunctions.js"></script>
+</body>
+</html>
